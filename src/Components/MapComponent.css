@@ -1,0 +1,45 @@
+/* Ensure this CSS is included in your CSS file or style block */
+
+.map-container {
+  border: 1px solid #ddd; /* Light border for the box */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Space around the content */
+  background-color: #f9f9f9; /* Light background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 16px auto; /* Center the box and add margin */
+  max-width: 800px; /* Maximum width of the box */
+  position: relative; /* Ensure position relative for child absolute positioning */
+}
+
+#map {
+  width: 100%;
+  height: 100%; /* Ensure map takes up the full height of the container */
+  border-radius: 8px; /* Rounded corners for the map */
+  overflow: hidden; /* Ensure no content overflows */
+}
+
+.controls {
+  margin-top: 16px; /* Space above the buttons */
+  display: flex; /* Flexbox for button alignment */
+  justify-content: space-between; /* Space between buttons */
+  position: absolute; /* Positioning buttons outside of the map box */
+  bottom: 16px; /* Position buttons at the bottom of the map box */
+  width: calc(
+    100% - 32px
+  ); /* Adjust width to fit inside the container padding */
+}
+
+.control-button {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded button corners */
+  padding: 8px 16px; /* Button padding */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for buttons */
+  transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.control-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}

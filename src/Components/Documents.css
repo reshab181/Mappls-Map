@@ -1,0 +1,66 @@
+.documents-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.documents-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  text-align: left;
+}
+
+.documents-section h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.documents-section img {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 auto 20px; /* Centers the image horizontally */
+  display: block; /* Ensures the image behaves as a block-level element */
+}
+
+.documents-section img:hover {
+  border-color: #333;
+}
+
+@media (max-width: 768px) {
+  .documents-section img {
+    max-width: 100%;
+  }
+}
+
+.documents-section p {
+  font-size: 16px;
+  color: #666;
+}
+
+.documents-section {
+  text-align: center;
+}
+
+/* General styles for the documents section */
+.documents-section img {
+  max-width: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto 20px; /* Centers the image horizontally */
+}
+
+/* Highlighted state */
+.documents-section img.highlighted {
+  transform: scale(1.2); /* Slightly enlarges the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for emphasis */
+  border: 2px solid #007bff; /* Optional border for a clear highlight */
+}
