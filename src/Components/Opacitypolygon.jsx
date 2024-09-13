@@ -113,7 +113,7 @@ const OpacityPolygon= () => {
   const [isMapLoaded, setIsMapLoaded] = useState(false);
 
   useEffect(() => {
-    mapplsClassObject.initialize("1e40b15f-3a13-4bf6-a4ed-ba974c78eba4", { map: true }, () => {
+    mapplsClassObject.initialize(import.meta.env.VITE_ACCESS_TOKEN, { map: true }, () => {
       if (map.current) {
         map.current.remove();
       }

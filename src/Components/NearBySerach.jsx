@@ -40,11 +40,11 @@ const MapWithNearbySearch = () => {
     };
 
     const script1 = document.createElement("script");
-    script1.src = "https://apis.mappls.com/advancedmaps/api/1e40b15f-3a13-4bf6-a4ed-ba974c78eba4/map_sdk?layer=vector&v=3.0&callback=initMap1";
+    script1.src = `https://apis.mappls.com/advancedmaps/api/${import.meta.env.VITE_ACCESS_TOKEN}/map_sdk?layer=vector&v=3.0&callback=initMap1`;
     script1.async = true;
 
     const script2 = document.createElement("script");
-    script2.src = "https://apis.mappls.com/advancedmaps/api/1e40b15f-3a13-4bf6-a4ed-ba974c78eba4/map_sdk_plugins?v=3.0";
+    script2.src = `https://apis.mappls.com/advancedmaps/api/${import.meta.env.VITE_ACCESS_TOKEN}/map_sdk_plugins?v=3.0`;
     script2.async = true;
 
     document.body.appendChild(script1);

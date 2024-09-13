@@ -31,7 +31,7 @@ const Marker = () => {
   };
 
   useEffect(() => {
-    mapplsClassObject.initialize("1e40b15f-3a13-4bf6-a4ed-ba974c78eba4", loadObject, () => {
+    mapplsClassObject.initialize(import.meta.env.VITE_ACCESS_TOKEN, loadObject, () => {
       const newMap = mapplsClassObject.Map({
         id: "map",
         properties: {

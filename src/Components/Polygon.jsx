@@ -45,7 +45,7 @@ const PolygonMap = () => {
 
     // Load Mappls SDK
     const script = document.createElement("script");
-    script.src = "https://apis.mappls.com/advancedmaps/api/1e40b15f-3a13-4bf6-a4ed-ba974c78eba4/map_sdk?layer=vector&v=3.0&callback=initMap1";
+    script.src = `https://apis.mappls.com/advancedmaps/api/${import.meta.env.VITE_ACCESS_TOKEN}/map_sdk?layer=vector&v=3.0&callback=initMap1`;
     script.async = true;
     document.body.appendChild(script);
 
